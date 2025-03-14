@@ -17,3 +17,6 @@ def square(n):
         raise ValueError("square must be between 0 and 64")
     return pow(2,n)
 
+def total():
+    
+    return pow(2, 64) -1
