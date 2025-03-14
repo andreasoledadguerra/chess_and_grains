@@ -1,4 +1,19 @@
 def square(n):
+    """
+    There once was a wise servant who saved the life of a prince.  
+    The king, grateful for his service, promised to grant him any reward he desired.  
+    The servant, knowing the king's passion for chess, made a humble request:  
+    one grain of wheat on the first square of a chessboard, with the amount doubling on each subsequent square.  
+    This function calculates the number of grains of wheat on a given square (1 to 64)  
+    following this pattern: 1, 2, 4, 8, 16, ... (powers of 2).  
+    Parameters:
+        n (int): The square number (1-based index). Must be between 1 and 64.
+    Returns:
+        int: The number of grains on the nth square.
+    Raises:
+    ValueError: If n is not between 1 and 64.
+    """
     if not(0 <= n <= 64):
         raise ValueError("square must be between 0 and 64")
-    return pow(2,n) 
+    return pow(2,n)
+
