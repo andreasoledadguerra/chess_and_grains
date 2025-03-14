@@ -18,5 +18,16 @@ def square(n):
     return pow(2,n)
 
 def total():
-    
+    """
+    After hearing the servant's request, the king gladly agreed—until he realized the true cost.  
+    The total number of grains across all 64 squares is astonishing:  
+    a sum so large that it surpasses the entire kingdom's wheat production.  
+
+    This function calculates the total number of grains on the entire chessboard  
+    by summing all the squares:  
+    1 + 2 + 4 + 8 + 16 + ... + 2^63 = 2^64 - 1
+
+    Returns:
+        int: The total number of grains on all 64 squares.
+    """
     return pow(2, 64) -1
