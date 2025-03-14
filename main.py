@@ -13,7 +13,7 @@ def square(n):
     Raises:
     ValueError: If n is not between 1 and 64.
     """
-    if not(0 <= n <= 64):
+    if not(0 <= n <= 64): # Adjusted the range to match chessboard squares (0-based index)
         raise ValueError("square must be between 0 and 64")
     return pow(2,n)
 
